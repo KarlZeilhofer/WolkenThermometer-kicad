@@ -1,0 +1,360 @@
+Cmp-Mod V01 Created by Cvpcb 0.201501280107+5391~20~ubuntu14.10.1-product   date = Sam 28 Feb 2015 22:55:53 CET
+
+BeginCmp
+TimeStamp = /54DC9C02;
+Reference = BAT1;
+ValeurCmp = 3.6V/800mAh/NiMH;
+IdModule  = zeilhofer:Battery-Pack-3xAAA;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EE46EE;
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F22A2F;
+Reference = C2;
+ValeurCmp = 10u/10V/X7R;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED0747;
+Reference = C3;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED653F;
+Reference = C4;
+ValeurCmp = 100n;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F86849;
+Reference = C5;
+ValeurCmp = DNP;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F86941;
+Reference = C6;
+ValeurCmp = DNP;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED1648;
+Reference = C7;
+ValeurCmp = 10u/10V/X7R;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F229AB;
+Reference = C8;
+ValeurCmp = 10u/10V/X7R;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EFF1B4;
+Reference = D1;
+ValeurCmp = LL4148;
+IdModule  = Diodes_SMD:Diode-MiniMELF_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F27E3C;
+Reference = D2;
+ValeurCmp = green;
+IdModule  = LEDs:LED-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F0E6DF;
+Reference = G1;
+ValeurCmp = Solar Panel 6V/0.5W;
+IdModule  = wifi-sensor:Solar-Panel_60x60mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC9C67;
+Reference = P1;
+ValeurCmp = SolarPanel;
+IdModule  = wifi-sensor:Pinheader_01x02_Edge_SMT;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F0DF02;
+Reference = P2;
+ValeurCmp = Battery;
+IdModule  = wifi-sensor:Pinheader_02x01_Edge_SMT;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC9E07;
+Reference = P3;
+ValeurCmp = DS18S20;
+IdModule  = wifi-sensor:Pinheader_01x03_Edge_SMT;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F1C4BF;
+Reference = P4;
+ValeurCmp = Arduino-Programming;
+IdModule  = wifi-sensor:Pinheader_01x04_Edge_SMT;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ECE768;
+Reference = P5;
+ValeurCmp = ISP 6-pin;
+IdModule  = wifi-sensor:Pinheader_02x03_Edge_SMT;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EF6EC6;
+Reference = P6;
+ValeurCmp = I2C-Bus;
+IdModule  = wifi-sensor:Pinheader_01x04_Edge_SMT;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC9F7A;
+Reference = P7;
+ValeurCmp = WIFI;
+IdModule  = zeilhofer:ESP8266-V2;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F52A0F;
+Reference = Q1;
+ValeurCmp = BSS123;
+IdModule  = zeilhofer:sot23-gsd;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F58340;
+Reference = Q2;
+ValeurCmp = BSS308;
+IdModule  = zeilhofer:sot23-gsd;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F538E7;
+Reference = Q3;
+ValeurCmp = BSS123;
+IdModule  = zeilhofer:sot23-gsd;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F53576;
+Reference = Q4;
+ValeurCmp = BSS123;
+IdModule  = zeilhofer:sot23-gsd;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EE8AF9;
+Reference = R1;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ECCAA9;
+Reference = R2;
+ValeurCmp = 150R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ECCF34;
+Reference = R3;
+ValeurCmp = 150R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EE42A0;
+Reference = R4;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F5A58F;
+Reference = R5;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ECCF54;
+Reference = R6;
+ValeurCmp = 150R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ECCF75;
+Reference = R7;
+ValeurCmp = 150R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F27B1A;
+Reference = R8;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F09CD2;
+Reference = R9;
+ValeurCmp = 4k7;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED639D;
+Reference = R10;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED2A9E;
+Reference = R11;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED2B12;
+Reference = R12;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F95EC0;
+Reference = R13;
+ValeurCmp = 100R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED6109;
+Reference = R14;
+ValeurCmp = 100k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F95F2C;
+Reference = R15;
+ValeurCmp = 100R;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED7F31;
+Reference = R16;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EF7601;
+Reference = R17;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F9645B;
+Reference = R18;
+ValeurCmp = 4k7;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F9708D;
+Reference = R19;
+ValeurCmp = 4k7;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EF757E;
+Reference = R20;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED9B0D;
+Reference = R21;
+ValeurCmp = 100k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED3A31;
+Reference = R22;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED038E;
+Reference = R23;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /54ED3C72;
+Reference = S1;
+ValeurCmp = Reset;
+IdModule  = wifi-sensor:Switch_SMT_TL3315;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EE7B45;
+Reference = U1;
+ValeurCmp = LM431SCCM32X;
+IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT23_Handsoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54DC9DB0;
+Reference = U2;
+ValeurCmp = ATMEGA328P-A;
+IdModule  = Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /54F0576B;
+Reference = U3;
+ValeurCmp = MCP1825T-3002E_DCCT;
+IdModule  = git_local_smd_packages:SOT-223-5_1.27mm-pitch;
+EndCmp
+
+BeginCmp
+TimeStamp = /54EE3061;
+Reference = X1;
+ValeurCmp = RESONATOR 8MHz;
+IdModule  = git_xtal:Resonator_7.2x3mm;
+EndCmp
+
+EndListe

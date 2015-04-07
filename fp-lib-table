@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name git_local_smd_packages)(type KiCad)(uri /home/karl/K/KiCad/github/SMD_Packages.pretty)(options "")(descr ""))
+  (lib (name w_smd_lqfp)(type Legacy)(uri /home/karl/K/KiCad/libs-kcs-walter/mod_smd_lqfp/w_smd_lqfp.mod)(options "")(descr ""))
+  (lib (name w_smd_trans)(type Legacy)(uri /home/karl/K/KiCad/libs-kcs-walter/mod_smd_trans/w_smd_trans.mod)(options "")(descr ""))
+  (lib (name zeilhofer)(type KiCad)(uri /home/karl/K/KiCad/zeilhofer.pretty)(options "")(descr ""))
+  (lib (name w_switch)(type Legacy)(uri /home/karl/K/KiCad/libs-kcs-walter/mod_switch/w_switch.mod)(options "")(descr ""))
+  (lib (name git_xtal)(type KiCad)(uri /home/karl/K/KiCad/github/Crystals_Oscillators_SMD.pretty)(options "")(descr ""))
+  (lib (name wifi-sensor)(type KiCad)(uri /home/karl/WifiSensor/kicad/wifi-sensor/wifi-sensor.pretty)(options "")(descr ""))
+)

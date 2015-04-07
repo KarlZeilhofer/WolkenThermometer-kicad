@@ -1,0 +1,1638 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:w_transistor
+LIBS:w_device
+LIBS:zeilhofer
+LIBS:wifi-sensor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "WolkenThermometer"
+Date "2015-04-08"
+Rev "V1.0"
+Comp "Mechatronik Karl Zeilhofer"
+Comment1 "www.zeilhofer.co.at/wolke"
+Comment2 "Creative Commons - Attribution, Share Alike"
+Comment3 "Open Source Hardware"
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X02 P1
+U 1 1 54DC9C67
+P 800 6950
+F 0 "P1" H 800 7100 50  0000 C CNN
+F 1 "SolarPanel" V 900 6950 50  0000 C CNN
+F 2 "wifi-sensor:Pinheader_01x02_Edge_SMT" H 800 6950 60  0001 C CNN
+F 3 "" H 800 6950 60  0000 C CNN
+F 4 "DNP" H 800 6950 60  0001 C CNN "InternalName"
+	1    800  6950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P3
+U 1 1 54DC9E07
+P 4150 1950
+F 0 "P3" H 4150 2150 50  0000 C CNN
+F 1 "Sensor" V 4250 1950 50  0000 C CNN
+F 2 "wifi-sensor:Pinheader_01x03_Edge_SMT" H 4150 1950 60  0001 C CNN
+F 3 "" H 4150 1950 60  0000 C CNN
+	1    4150 1950
+	-1   0    0    1   
+$EndComp
+Text Notes 3050 2050 0    60   ~ 0
+digital \ntemperature sensor
+$Comp
+L CONN_02X04 P7
+U 1 1 54DC9F7A
+P 9200 4900
+F 0 "P7" H 9200 5150 50  0000 C CNN
+F 1 "WIFI" H 9200 4650 50  0000 C CNN
+F 2 "zeilhofer:ESP8266-V2" H 9200 3700 60  0001 C CNN
+F 3 "" H 9200 3700 60  0000 C CNN
+	1    9200 4900
+	1    0    0    -1  
+$EndComp
+Text Notes 9000 5400 0    60   ~ 0
+WiFi Module \nESP8266 V1
+$Comp
+L R R2
+U 1 1 54ECCAA9
+P 1950 6350
+F 0 "R2" V 2030 6350 50  0000 C CNN
+F 1 "150R" V 1957 6351 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1880 6350 30  0001 C CNN
+F 3 "" H 1950 6350 30  0000 C CNN
+	1    1950 6350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 54ECCBF6
+P 1950 7450
+F 0 "#PWR01" H 1950 7200 60  0001 C CNN
+F 1 "GND" H 1950 7300 60  0000 C CNN
+F 2 "" H 1950 7450 60  0000 C CNN
+F 3 "" H 1950 7450 60  0000 C CNN
+	1    1950 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 54ECCF34
+P 2150 6350
+F 0 "R3" V 2230 6350 50  0000 C CNN
+F 1 "150R" V 2157 6351 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2080 6350 30  0001 C CNN
+F 3 "" H 2150 6350 30  0000 C CNN
+	1    2150 6350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 54ECCF54
+P 2350 6350
+F 0 "R6" V 2430 6350 50  0000 C CNN
+F 1 "150R" V 2357 6351 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2280 6350 30  0001 C CNN
+F 3 "" H 2350 6350 30  0000 C CNN
+	1    2350 6350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 54ECCF75
+P 2550 6350
+F 0 "R7" V 2630 6350 50  0000 C CNN
+F 1 "150R" V 2557 6351 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2480 6350 30  0001 C CNN
+F 3 "" H 2550 6350 30  0000 C CNN
+	1    2550 6350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 54ECD247
+P 1450 7450
+F 0 "#PWR02" H 1450 7200 60  0001 C CNN
+F 1 "GND" H 1450 7300 60  0000 C CNN
+F 2 "" H 1450 7450 60  0000 C CNN
+F 3 "" H 1450 7450 60  0000 C CNN
+	1    1450 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 54ECD27D
+P 1000 7450
+F 0 "#PWR03" H 1000 7200 60  0001 C CNN
+F 1 "GND" H 1000 7300 60  0000 C CNN
+F 2 "" H 1000 7450 60  0000 C CNN
+F 3 "" H 1000 7450 60  0000 C CNN
+	1    1000 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 54ECD5B4
+P 1950 5850
+F 0 "#PWR04" H 1950 5700 60  0001 C CNN
+F 1 "VCC" H 1950 6000 60  0000 C CNN
+F 2 "" H 1950 5850 60  0000 C CNN
+F 3 "" H 1950 5850 60  0000 C CNN
+	1    1950 5850
+	1    0    0    -1  
+$EndComp
+Text Label 8550 4750 0    60   ~ 0
+UTXD
+Text Label 8550 4850 0    60   ~ 0
+CH_PD\
+Text Label 8550 4950 0    60   ~ 0
+RST\_WiFi
+Text Label 8550 5050 0    60   ~ 0
+VCC_WiFi
+Text Label 9600 4750 0    60   ~ 0
+GND
+Text Label 9600 4850 0    60   ~ 0
+GPIO2
+Text Label 9600 4950 0    60   ~ 0
+GPIO0
+Text Label 9600 5050 0    60   ~ 0
+URXD
+$Comp
+L CONN_02X03 P5
+U 1 1 54ECE768
+P 6300 2450
+F 0 "P5" H 6300 2650 50  0000 C CNN
+F 1 "ISP 6-pin" H 6300 2250 50  0000 C CNN
+F 2 "wifi-sensor:Pinheader_02x03_Edge_SMT" H 6300 1250 60  0001 C CNN
+F 3 "" H 6300 1250 60  0000 C CNN
+	1    6300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 54ECF12D
+P 6650 2300
+F 0 "#PWR05" H 6650 2150 60  0001 C CNN
+F 1 "VCC" H 6650 2450 60  0000 C CNN
+F 2 "" H 6650 2300 60  0000 C CNN
+F 3 "" H 6650 2300 60  0000 C CNN
+	1    6650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 54ECF1A6
+P 6750 2550
+F 0 "#PWR06" H 6750 2300 60  0001 C CNN
+F 1 "GND" H 6750 2400 60  0000 C CNN
+F 2 "" H 6750 2550 60  0000 C CNN
+F 3 "" H 6750 2550 60  0000 C CNN
+	1    6750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 54ED038E
+P 9200 4300
+F 0 "R23" V 9280 4300 50  0000 C CNN
+F 1 "100R" V 9207 4301 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 9130 4300 30  0001 C CNN
+F 3 "" H 9200 4300 30  0000 C CNN
+	1    9200 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C3
+U 1 1 54ED0747
+P 2950 3450
+F 0 "C3" H 3000 3550 50  0000 L CNN
+F 1 "100n" H 3000 3350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 2988 3300 30  0001 C CNN
+F 3 "" H 2950 3450 60  0000 C CNN
+	1    2950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 54ED07E4
+P 2950 4200
+F 0 "#PWR07" H 2950 3950 60  0001 C CNN
+F 1 "GND" H 2950 4050 60  0000 C CNN
+F 2 "" H 2950 4200 60  0000 C CNN
+F 3 "" H 2950 4200 60  0000 C CNN
+	1    2950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 54ED08F3
+P 2750 2950
+F 0 "#PWR08" H 2750 2700 60  0001 C CNN
+F 1 "GND" H 2750 2800 60  0000 C CNN
+F 2 "" H 2750 2950 60  0000 C CNN
+F 3 "" H 2750 2950 60  0000 C CNN
+	1    2750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 54ED0A3A
+P 2750 2400
+F 0 "#PWR09" H 2750 2250 60  0001 C CNN
+F 1 "VCC" H 2750 2550 60  0000 C CNN
+F 2 "" H 2750 2400 60  0000 C CNN
+F 3 "" H 2750 2400 60  0000 C CNN
+	1    2750 2400
+	1    0    0    -1  
+$EndComp
+Text Notes 10400 1350 0    60   ~ 0
+3.0V for WiFi
+$Comp
+L GND #PWR010
+U 1 1 54ED12A9
+P 9700 2000
+F 0 "#PWR010" H 9700 1750 60  0001 C CNN
+F 1 "GND" H 9700 1850 60  0000 C CNN
+F 2 "" H 9700 2000 60  0000 C CNN
+F 3 "" H 9700 2000 60  0000 C CNN
+	1    9700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR011
+U 1 1 54ED1598
+P 8900 1300
+F 0 "#PWR011" H 8900 1150 60  0001 C CNN
+F 1 "VCC" H 8900 1450 60  0000 C CNN
+F 2 "" H 8900 1300 60  0000 C CNN
+F 3 "" H 8900 1300 60  0000 C CNN
+	1    8900 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 54ED1648
+P 8900 1800
+F 0 "C7" H 8950 1900 50  0000 L CNN
+F 1 "10u/10V/X7R" V 8750 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8938 1650 30  0001 C CNN
+F 3 "" H 8900 1800 60  0000 C CNN
+	1    8900 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 54ED1796
+P 10600 2100
+F 0 "#PWR012" H 10600 1850 60  0001 C CNN
+F 1 "GND" H 10600 1950 60  0000 C CNN
+F 2 "" H 10600 2100 60  0000 C CNN
+F 3 "" H 10600 2100 60  0000 C CNN
+	1    10600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 54ED1817
+P 8900 2100
+F 0 "#PWR013" H 8900 1850 60  0001 C CNN
+F 1 "GND" H 8900 1950 60  0000 C CNN
+F 2 "" H 8900 2100 60  0000 C CNN
+F 3 "" H 8900 2100 60  0000 C CNN
+	1    8900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 54ED28C5
+P 5500 5650
+F 0 "#PWR014" H 5500 5400 60  0001 C CNN
+F 1 "GND" H 5500 5500 60  0000 C CNN
+F 2 "" H 5500 5650 60  0000 C CNN
+F 3 "" H 5500 5650 60  0000 C CNN
+	1    5500 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R11
+U 1 1 54ED2A9E
+P 5650 5400
+F 0 "R11" V 5730 5400 50  0000 C CNN
+F 1 "1k" V 5657 5401 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5580 5400 30  0001 C CNN
+F 3 "" H 5650 5400 30  0000 C CNN
+	1    5650 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 54ED2B12
+P 5850 5400
+F 0 "R12" V 5930 5400 50  0000 C CNN
+F 1 "1k" V 5857 5401 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5780 5400 30  0001 C CNN
+F 3 "" H 5850 5400 30  0000 C CNN
+	1    5850 5400
+	-1   0    0    -1  
+$EndComp
+Text Notes 5200 6100 2    60   ~ 0
+Pressing the reset button is necessary\nfor downloading a new firmware, \nif pin 4 is not used.
+$Comp
+L R R22
+U 1 1 54ED3A31
+P 8250 1550
+F 0 "R22" V 8330 1550 50  0000 C CNN
+F 1 "1k" V 8257 1551 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 8180 1550 30  0001 C CNN
+F 3 "" H 8250 1550 30  0000 C CNN
+	1    8250 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SW_PUSH S1
+U 1 1 54ED3C72
+P 7550 1200
+F 0 "S1" H 7700 1310 50  0000 C CNN
+F 1 "Reset" H 7550 1120 50  0000 C CNN
+F 2 "wifi-sensor:Switch_SMT_TL3315" H 7550 1200 60  0001 C CNN
+F 3 "" H 7550 1200 60  0000 C CNN
+	1    7550 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 54ED3D3A
+P 8600 2250
+F 0 "#PWR015" H 8600 2000 60  0001 C CNN
+F 1 "GND" H 8600 2100 60  0000 C CNN
+F 2 "" H 8600 2250 60  0000 C CNN
+F 3 "" H 8600 2250 60  0000 C CNN
+	1    8600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR016
+U 1 1 54ED4397
+P 7550 750
+F 0 "#PWR016" H 7550 600 60  0001 C CNN
+F 1 "VCC" H 7550 900 60  0000 C CNN
+F 2 "" H 7550 750 60  0000 C CNN
+F 3 "" H 7550 750 60  0000 C CNN
+	1    7550 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 54ED6067
+P 7150 2250
+F 0 "#PWR017" H 7150 2000 60  0001 C CNN
+F 1 "GND" H 7150 2100 60  0000 C CNN
+F 2 "" H 7150 2250 60  0000 C CNN
+F 3 "" H 7150 2250 60  0000 C CNN
+	1    7150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 54ED6109
+P 7150 1100
+F 0 "R14" V 7230 1100 50  0000 C CNN
+F 1 "100k" V 7157 1101 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7080 1100 30  0001 C CNN
+F 3 "" H 7150 1100 30  0000 C CNN
+	1    7150 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR018
+U 1 1 54ED6173
+P 7150 750
+F 0 "#PWR018" H 7150 600 60  0001 C CNN
+F 1 "VCC" H 7150 900 60  0000 C CNN
+F 2 "" H 7150 750 60  0000 C CNN
+F 3 "" H 7150 750 60  0000 C CNN
+	1    7150 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 54ED639D
+P 5600 1100
+F 0 "R10" V 5680 1100 50  0000 C CNN
+F 1 "1k" V 5607 1101 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5530 1100 30  0001 C CNN
+F 3 "" H 5600 1100 30  0000 C CNN
+	1    5600 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR019
+U 1 1 54ED63FC
+P 5600 750
+F 0 "#PWR019" H 5600 600 60  0001 C CNN
+F 1 "VCC" H 5600 900 60  0000 C CNN
+F 2 "" H 5600 750 60  0000 C CNN
+F 3 "" H 5600 750 60  0000 C CNN
+	1    5600 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 54ED653F
+P 6250 1500
+F 0 "C4" H 6300 1600 50  0000 L CNN
+F 1 "100n" H 6300 1400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 6288 1350 30  0001 C CNN
+F 3 "" H 6250 1500 60  0000 C CNN
+	1    6250 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R16
+U 1 1 54ED7F31
+P 7250 4750
+F 0 "R16" V 7330 4750 50  0000 C CNN
+F 1 "10k" V 7257 4751 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7180 4750 30  0001 C CNN
+F 3 "" H 7250 4750 30  0000 C CNN
+	1    7250 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R21
+U 1 1 54ED9B0D
+P 7750 2150
+F 0 "R21" V 7830 2150 50  0000 C CNN
+F 1 "1k" V 7757 2151 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7680 2150 30  0001 C CNN
+F 3 "" H 7750 2150 30  0000 C CNN
+	1    7750 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 54ED9C44
+P 7750 2450
+F 0 "#PWR020" H 7750 2200 60  0001 C CNN
+F 1 "GND" H 7750 2300 60  0000 C CNN
+F 2 "" H 7750 2450 60  0000 C CNN
+F 3 "" H 7750 2450 60  0000 C CNN
+	1    7750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 54EE2C34
+P 7800 3250
+F 0 "#PWR021" H 7800 3000 60  0001 C CNN
+F 1 "GND" H 7800 3100 60  0000 C CNN
+F 2 "" H 7800 3250 60  0000 C CNN
+F 3 "" H 7800 3250 60  0000 C CNN
+	1    7800 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RESONATOR_SMD X1
+U 1 1 54EE3061
+P 7350 3250
+F 0 "X1" V 7200 3700 50  0000 C CNN
+F 1 "RESONATOR 8MHz" V 7050 3250 50  0000 L CNN
+F 2 "git_xtal:Resonator_7.2x3mm" H 7350 3250 60  0001 C CNN
+F 3 "" H 7350 3250 60  0000 C CNN
+	1    7350 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 54EE42A0
+P 2250 2700
+F 0 "R4" V 2330 2700 50  0000 C CNN
+F 1 "1k" V 2257 2701 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2180 2700 30  0001 C CNN
+F 3 "" H 2250 2700 30  0000 C CNN
+	1    2250 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 54EE46EE
+P 2500 4400
+F 0 "C1" H 2550 4500 50  0000 L CNN
+F 1 "100n" H 2550 4300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 2538 4250 30  0001 C CNN
+F 3 "" H 2500 4400 60  0000 C CNN
+	1    2500 4400
+	1    0    0    -1  
+$EndComp
+Text Notes 1350 5550 0    60   ~ 0
+max. 4.1V\nmin. 3.3V\n
+Text Notes 7750 850  0    60   ~ 0
+Button triggers reset of MCU\nand disables the 3.0V regulator
+$Comp
+L TL431_SOT23-3 U1
+U 1 1 54EE7B45
+P 1050 3250
+F 0 "U1" H 1200 3550 50  0000 C CNN
+F 1 "LM431SCCM32X" V 850 3300 50  0000 C CNN
+F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT23_Handsoldering" H 1050 3250 60  0001 C CNN
+F 3 "" H 1050 3250 60  0000 C CNN
+	1    1050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 54EE8629
+P 1050 3800
+F 0 "#PWR022" H 1050 3550 60  0001 C CNN
+F 1 "GND" H 1050 3650 60  0000 C CNN
+F 2 "" H 1050 3800 60  0000 C CNN
+F 3 "" H 1050 3800 60  0000 C CNN
+	1    1050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 54EE8AF9
+P 1050 2350
+F 0 "R1" V 1130 2350 50  0000 C CNN
+F 1 "1k" V 1057 2351 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 980 2350 30  0001 C CNN
+F 3 "" H 1050 2350 30  0000 C CNN
+	1    1050 2350
+	-1   0    0    -1  
+$EndComp
+Text Notes 1450 3400 0    60   ~ 0
+2.51V/0.5%
+Text Label 5100 4050 0    60   ~ 0
+RST\
+Text Label 6400 3200 0    60   ~ 0
+XTAL1
+Text Label 6400 3300 0    60   ~ 0
+XTAL2
+Text Label 5650 3000 0    60   ~ 0
+MISO
+Text Label 5650 2900 0    60   ~ 0
+MOSI
+Text Label 5650 3100 0    60   ~ 0
+SCK
+Text Notes 750  3550 1    60   ~ 0
+shunt reference
+Text Notes 8000 1400 0    60   ~ 0
+WiFi enable
+$Comp
+L CONN_01X04 P6
+U 1 1 54EF6EC6
+P 6800 6150
+F 0 "P6" H 6800 6400 50  0000 C CNN
+F 1 "I2C-Bus" V 6900 6150 50  0000 C CNN
+F 2 "wifi-sensor:Pinheader_01x04_Edge_SMT" H 6800 6150 60  0001 C CNN
+F 3 "" H 6800 6150 60  0000 C CNN
+	1    6800 6150
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 54EF7044
+P 6600 5850
+F 0 "#PWR023" H 6600 5600 60  0001 C CNN
+F 1 "GND" H 6600 5700 60  0000 C CNN
+F 2 "" H 6600 5850 60  0000 C CNN
+F 3 "" H 6600 5850 60  0000 C CNN
+	1    6600 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R20
+U 1 1 54EF757E
+P 7600 4900
+F 0 "R20" V 7680 4900 50  0000 C CNN
+F 1 "1k" V 7607 4901 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7530 4900 30  0001 C CNN
+F 3 "" H 7600 4900 30  0000 C CNN
+	1    7600 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R17
+U 1 1 54EF7601
+P 7250 5050
+F 0 "R17" V 7330 5050 50  0000 C CNN
+F 1 "1k" V 7257 5051 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7180 5050 30  0001 C CNN
+F 3 "" H 7250 5050 30  0000 C CNN
+	1    7250 5050
+	0    -1   -1   0   
+$EndComp
+Text Label 5100 4800 0    60   ~ 0
+D6
+Text Label 5100 4900 0    60   ~ 0
+D7
+$Comp
+L GND #PWR024
+U 1 1 54EF93E8
+P 9850 4750
+F 0 "#PWR024" H 9850 4500 60  0001 C CNN
+F 1 "GND" H 9850 4600 60  0000 C CNN
+F 2 "" H 9850 4750 60  0000 C CNN
+F 3 "" H 9850 4750 60  0000 C CNN
+	1    9850 4750
+	0    -1   -1   0   
+$EndComp
+Text Label 5100 4600 0    60   ~ 0
+D4
+Text Label 5100 4700 0    60   ~ 0
+D5
+$Comp
+L GND #PWR025
+U 1 1 54EFD5A8
+P 3050 5050
+F 0 "#PWR025" H 3050 4800 60  0001 C CNN
+F 1 "GND" H 3050 4900 60  0000 C CNN
+F 2 "" H 3050 5050 60  0000 C CNN
+F 3 "" H 3050 5050 60  0000 C CNN
+	1    3050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR026
+U 1 1 54EFE099
+P 6750 5900
+F 0 "#PWR026" H 6750 5750 60  0001 C CNN
+F 1 "VCC" H 6750 6050 60  0000 C CNN
+F 2 "" H 6750 5900 60  0000 C CNN
+F 3 "" H 6750 5900 60  0000 C CNN
+	1    6750 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 54F09879
+P 4400 2050
+F 0 "#PWR027" H 4400 1800 60  0001 C CNN
+F 1 "GND" H 4400 1900 60  0000 C CNN
+F 2 "" H 4400 2050 60  0000 C CNN
+F 3 "" H 4400 2050 60  0000 C CNN
+	1    4400 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R9
+U 1 1 54F09CD2
+P 4800 1700
+F 0 "R9" V 4880 1700 50  0000 C CNN
+F 1 "4k7" V 4807 1701 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4730 1700 30  0001 C CNN
+F 3 "" H 4800 1700 30  0000 C CNN
+	1    4800 1700
+	0    -1   -1   0   
+$EndComp
+Text Label 5900 3850 0    60   ~ 0
+SDA
+Text Label 5900 3950 0    60   ~ 0
+SCL
+Text Notes 6300 6400 0    60   ~ 0
+for custom extensions
+Text Notes 500  750  0    80   ~ 0
+All resistors and capacitors are SMD3216m\nfor easy solderability
+Text Notes 2900 6650 1    80   ~ 0
+discharge\nresistors
+$Comp
+L PWR_FLAG #FLG028
+U 1 1 54F20900
+P 1500 7350
+F 0 "#FLG028" H 1500 7445 30  0001 C CNN
+F 1 "PWR_FLAG" H 1500 7530 30  0000 C CNN
+F 2 "" H 1500 7350 60  0000 C CNN
+F 3 "" H 1500 7350 60  0000 C CNN
+	1    1500 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L PWR_FLAG #FLG029
+U 1 1 54F21041
+P 1500 6100
+F 0 "#FLG029" H 1500 6195 30  0001 C CNN
+F 1 "PWR_FLAG" H 1500 6280 30  0000 C CNN
+F 2 "" H 1500 6100 60  0000 C CNN
+F 3 "" H 1500 6100 60  0000 C CNN
+	1    1500 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODE2 D1
+U 1 1 54EFF1B4
+P 1000 6350
+F 0 "D1" H 1000 6450 50  0000 C CNN
+F 1 "LL4148" H 1000 6250 40  0000 C CNN
+F 2 "Diodes_SMD:Diode-MiniMELF_Handsoldering" H 1000 6350 60  0001 C CNN
+F 3 "" H 1000 6350 60  0000 C CNN
+	1    1000 6350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NMOSFET2 Q1
+U 1 1 54F52A0F
+P 2050 7100
+F 0 "Q1" H 1953 7350 70  0000 C CNN
+F 1 "BSS123" H 1903 6853 60  0000 C CNN
+F 2 "zeilhofer:sot23-gsd" H 2050 7100 60  0001 C CNN
+F 3 "" H 2050 7100 60  0000 C CNN
+	1    2050 7100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L NMOSFET2 Q4
+U 1 1 54F53576
+P 8500 1850
+F 0 "Q4" H 8350 2000 70  0000 C CNN
+F 1 "BSS123" H 8353 1603 60  0000 C CNN
+F 2 "zeilhofer:sot23-gsd" H 8500 1850 60  0001 C CNN
+F 3 "" H 8500 1850 60  0000 C CNN
+	1    8500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L NMOSFET2 Q3
+U 1 1 54F538E7
+P 7250 1850
+F 0 "Q3" H 7153 2100 70  0000 C CNN
+F 1 "BSS123" H 7103 1603 60  0000 C CNN
+F 2 "zeilhofer:sot23-gsd" H 7250 1850 60  0001 C CNN
+F 3 "" H 7250 1850 60  0000 C CNN
+	1    7250 1850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L ATMEGA328P-A U2
+U 1 1 54DC9DB0
+P 4050 3700
+F 0 "U2" H 3300 4950 50  0000 L BNN
+F 1 "ATMEGA328P-A" H 4450 2300 40  0000 L BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 4050 3700 30  0001 C CIN
+F 3 "" H 4050 3700 60  0000 C CNN
+	1    4050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L PMOSFET2 Q2
+U 1 1 54F58340
+P 2350 1200
+F 0 "Q2" H 2253 1450 70  0000 C CNN
+F 1 "BSS308" H 2203 953 60  0000 C CNN
+F 2 "zeilhofer:sot23-gsd" H 2350 1200 60  0001 C CNN
+F 3 "" H 2350 1200 60  0000 C CNN
+	1    2350 1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR030
+U 1 1 54F584D0
+P 2250 1050
+F 0 "#PWR030" H 2250 900 60  0001 C CNN
+F 1 "VCC" H 2250 1200 60  0000 C CNN
+F 2 "" H 2250 1050 60  0000 C CNN
+F 3 "" H 2250 1050 60  0000 C CNN
+	1    2250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 54F5A58F
+P 2250 4400
+F 0 "R5" V 2330 4400 50  0000 C CNN
+F 1 "1k" V 2257 4401 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2180 4400 30  0001 C CNN
+F 3 "" H 2250 4400 30  0000 C CNN
+	1    2250 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR031
+U 1 1 54F5AB20
+P 2950 3650
+F 0 "#PWR031" H 2950 3400 60  0001 C CNN
+F 1 "GND" H 2950 3500 60  0000 C CNN
+F 2 "" H 2950 3650 60  0000 C CNN
+F 3 "" H 2950 3650 60  0000 C CNN
+	1    2950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 54F5AE74
+P 2250 4650
+F 0 "#PWR032" H 2250 4400 60  0001 C CNN
+F 1 "GND" H 2250 4500 60  0000 C CNN
+F 2 "" H 2250 4650 60  0000 C CNN
+F 3 "" H 2250 4650 60  0000 C CNN
+	1    2250 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR033
+U 1 1 54F5CB64
+P 2500 4650
+F 0 "#PWR033" H 2500 4400 60  0001 C CNN
+F 1 "GND" H 2500 4500 60  0000 C CNN
+F 2 "" H 2500 4650 60  0000 C CNN
+F 3 "" H 2500 4650 60  0000 C CNN
+	1    2500 4650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5300 3450
+Text Label 5100 2600 0    60   ~ 0
+D8
+Text Label 5100 2700 0    60   ~ 0
+D9
+Text Label 5100 2800 0    60   ~ 0
+D10
+Text Label 5100 2900 0    60   ~ 0
+D11
+Text Label 5100 3000 0    60   ~ 0
+D12
+Text Label 5100 3100 0    60   ~ 0
+D13
+Text Label 5100 3450 0    60   ~ 0
+A0
+Text Label 5100 3550 0    60   ~ 0
+A1
+Text Label 5100 3650 0    60   ~ 0
+A2
+Text Label 5100 3750 0    60   ~ 0
+A3
+Text Label 5100 3850 0    60   ~ 0
+A4
+Text Label 5100 3950 0    60   ~ 0
+A5
+Text Label 3000 3950 0    60   ~ 0
+A6
+Text Label 3000 4050 0    60   ~ 0
+A7
+Text Label 7700 1550 0    60   ~ 0
+D2
+Text Label 5100 4500 0    60   ~ 0
+D3
+Text Label 5100 4400 0    60   ~ 0
+D2
+NoConn ~ 5300 3550
+NoConn ~ 5300 3650
+NoConn ~ 5300 3750
+Text Label 7700 1700 0    60   ~ 0
+D3
+Text Label 3050 7100 2    60   ~ 0
+D10
+Text Notes 9250 3900 0    60   ~ 0
+Arduino Nano Pins:\n---------------\nRX\nTX\nD2...WiFi enable (out)\nD3...Button (In, no pullup)\nD4...WiFi GPIO0\nD5...WiFi GPIO2\nD6...WiFi PowerDown\ (out)\nD7...Wifi Reset\ (out)\nD8...Temperature (in, no pullup)\nD9...EnableSensors\ (out)\nD10...EnableDischarge (out)\nMOSI\nMISO\nSCK
+Text Notes 6050 1800 0    60   ~ 0
+for reset \nimpulse
+Text Notes 8750 4150 0    60   ~ 0
+dirty "level converter"
+$Comp
+L C C5
+U 1 1 54F86849
+P 7550 3050
+F 0 "C5" H 7600 3150 50  0000 L CNN
+F 1 "DNP" H 7600 2950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7588 2900 30  0001 C CNN
+F 3 "" H 7550 3050 60  0000 C CNN
+	1    7550 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C6
+U 1 1 54F86941
+P 7550 3450
+F 0 "C6" H 7600 3550 50  0000 L CNN
+F 1 "DNP" H 7600 3350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7588 3300 30  0001 C CNN
+F 3 "" H 7550 3450 60  0000 C CNN
+	1    7550 3450
+	0    -1   1    0   
+$EndComp
+Text Notes 7050 5250 0    60   ~ 0
+dirty "level converter"
+Text Notes 2150 4250 1    60   ~ 0
+battery voltage
+$Comp
+L R R18
+U 1 1 54F95EC0
+P 6850 5450
+F 0 "R18" V 6930 5450 50  0000 C CNN
+F 1 "100R" V 6857 5451 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6780 5450 30  0001 C CNN
+F 3 "" H 6850 5450 30  0000 C CNN
+	1    6850 5450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 54F95F2C
+P 6950 5450
+F 0 "R15" V 7030 5450 50  0000 C CNN
+F 1 "100R" V 6957 5451 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 6880 5450 30  0001 C CNN
+F 3 "" H 6950 5450 30  0000 C CNN
+	1    6950 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 54F9645B
+P 7300 3850
+F 0 "R13" V 7380 3850 50  0000 C CNN
+F 1 "4k7" V 7307 3851 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7230 3850 30  0001 C CNN
+F 3 "" H 7300 3850 30  0000 C CNN
+	1    7300 3850
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R19
+U 1 1 54F9708D
+P 7300 3950
+F 0 "R19" V 7380 3950 50  0000 C CNN
+F 1 "4k7" V 7307 3951 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7230 3950 30  0001 C CNN
+F 3 "" H 7300 3950 30  0000 C CNN
+	1    7300 3950
+	0    1    1    0   
+$EndComp
+Text Notes 7150 4150 0    60   ~ 0
+optional
+$Comp
+L VCC #PWR034
+U 1 1 54F97720
+P 7650 3850
+F 0 "#PWR034" H 7650 3700 60  0001 C CNN
+F 1 "VCC" H 7650 4000 60  0000 C CNN
+F 2 "" H 7650 3850 60  0000 C CNN
+F 3 "" H 7650 3850 60  0000 C CNN
+	1    7650 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L MCP1825 U3
+U 1 1 54F0576B
+P 9500 1150
+F 0 "U3" H 9300 1150 60  0000 L CNN
+F 1 "MCP1825T-3002E_DCCT" H 9300 1050 60  0000 L CNN
+F 2 "git_local_smd_packages:SOT-223-5_1.27mm-pitch" H 9500 1150 60  0001 C CNN
+F 3 "" H 9500 1150 60  0000 C CNN
+	1    9500 1150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10300 1550
+$Comp
+L CONN_01X02 P2
+U 1 1 54F0DF02
+P 1250 6950
+F 0 "P2" H 1250 7100 50  0000 C CNN
+F 1 "Battery" V 1350 6950 50  0000 C CNN
+F 2 "wifi-sensor:Pinheader_02x01_Edge_SMT" H 1250 6950 60  0001 C CNN
+F 3 "" H 1250 6950 60  0000 C CNN
+	1    1250 6950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P4
+U 1 1 54F1C4BF
+P 5700 6000
+F 0 "P4" H 5700 6250 50  0000 C CNN
+F 1 "Arduino-Programming" V 5800 6000 50  0000 C CNN
+F 2 "wifi-sensor:Pinheader_01x04_Edge_SMT" H 5700 6000 60  0001 C CNN
+F 3 "" H 5700 6000 60  0000 C CNN
+	1    5700 6000
+	0    -1   1    0   
+$EndComp
+Text Label 6250 5600 1    60   ~ 0
+Ard.RST\
+Text Label 6900 2050 1    60   ~ 0
+Ard.RST\
+$Comp
+L C C8
+U 1 1 54F229AB
+P 10600 1800
+F 0 "C8" H 10650 1900 50  0000 L CNN
+F 1 "10u/10V/X7R" V 10450 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 10638 1650 30  0001 C CNN
+F 3 "" H 10600 1800 60  0000 C CNN
+	1    10600 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 54F22A2F
+P 2750 2700
+F 0 "C2" H 2800 2800 50  0000 L CNN
+F 1 "10u/10V/X7R" V 2600 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 2788 2550 30  0001 C CNN
+F 3 "" H 2750 2700 60  0000 C CNN
+	1    2750 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 54F27B1A
+P 1900 2100
+F 0 "R8" V 1980 2100 50  0000 C CNN
+F 1 "1k" V 1907 2101 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1830 2100 30  0001 C CNN
+F 3 "" H 1900 2100 30  0000 C CNN
+	1    1900 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED2 D2
+U 1 1 54F27E3C
+P 1900 2550
+F 0 "D2" H 1900 2650 50  0000 C CNN
+F 1 "green" H 1900 2450 50  0000 C CNN
+F 2 "LEDs:LED-1206" H 1900 2550 60  0001 C CNN
+F 3 "" H 1900 2550 60  0000 C CNN
+	1    1900 2550
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR035
+U 1 1 54F27ECA
+P 1900 2750
+F 0 "#PWR035" H 1900 2500 60  0001 C CNN
+F 1 "GND" H 1900 2600 60  0000 C CNN
+F 2 "" H 1900 2750 60  0000 C CNN
+F 3 "" H 1900 2750 60  0000 C CNN
+	1    1900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 6500 1950 6950
+Wire Wire Line
+	2550 6750 1950 6750
+Wire Wire Line
+	2150 6500 2150 6750
+Connection ~ 1950 6750
+Wire Wire Line
+	2350 6500 2350 6750
+Connection ~ 2150 6750
+Wire Wire Line
+	2550 6500 2550 6750
+Connection ~ 2350 6750
+Wire Wire Line
+	1950 7450 1950 7250
+Wire Wire Line
+	1950 5850 1950 6200
+Wire Wire Line
+	1000 5950 2550 5950
+Wire Wire Line
+	2550 5950 2550 6200
+Wire Wire Line
+	2350 5950 2350 6200
+Connection ~ 2350 5950
+Wire Wire Line
+	2150 5950 2150 6200
+Connection ~ 2150 5950
+Wire Wire Line
+	1450 5950 1450 6900
+Connection ~ 1950 5950
+Connection ~ 1450 5950
+Wire Wire Line
+	1450 7000 1450 7450
+Wire Wire Line
+	1000 7450 1000 7000
+Wire Wire Line
+	7400 4750 8950 4750
+Wire Wire Line
+	7850 4850 8950 4850
+Wire Wire Line
+	7950 4950 8950 4950
+Wire Wire Line
+	8950 5050 8350 5050
+Wire Wire Line
+	9450 4750 9850 4750
+Wire Wire Line
+	9450 4850 10050 4850
+Wire Wire Line
+	9450 4950 10150 4950
+Wire Wire Line
+	9450 5050 10250 5050
+Wire Wire Line
+	5050 3300 7050 3300
+Wire Wire Line
+	5050 3200 7050 3200
+Wire Wire Line
+	5050 3000 5950 3000
+Wire Wire Line
+	5950 3000 5950 2350
+Wire Wire Line
+	5950 2350 6050 2350
+Wire Wire Line
+	5050 3100 6000 3100
+Wire Wire Line
+	6000 3100 6000 2450
+Wire Wire Line
+	6000 2450 6050 2450
+Wire Wire Line
+	5600 4050 5050 4050
+Wire Wire Line
+	5600 1250 5600 4050
+Wire Wire Line
+	5600 2550 6050 2550
+Wire Wire Line
+	5050 2900 6650 2900
+Wire Wire Line
+	6650 2900 6650 2450
+Wire Wire Line
+	6650 2450 6550 2450
+Wire Wire Line
+	6650 2300 6650 2350
+Wire Wire Line
+	6650 2350 6550 2350
+Wire Wire Line
+	6750 2550 6550 2550
+Wire Wire Line
+	7050 3200 7050 3050
+Wire Wire Line
+	7050 3050 7400 3050
+Wire Wire Line
+	7050 3300 7050 3450
+Wire Wire Line
+	7050 3450 7400 3450
+Wire Wire Line
+	5050 4300 9050 4300
+Wire Wire Line
+	9350 4300 10250 4300
+Wire Wire Line
+	10250 4300 10250 5050
+Wire Wire Line
+	3050 2900 3150 2900
+Wire Wire Line
+	3050 2450 3050 2900
+Wire Wire Line
+	3050 2700 3150 2700
+Wire Wire Line
+	3050 2600 3150 2600
+Connection ~ 3050 2700
+Wire Wire Line
+	3150 3200 2950 3200
+Wire Wire Line
+	2950 3200 2950 3300
+Wire Wire Line
+	2750 2400 2750 2550
+Connection ~ 3050 2600
+Wire Wire Line
+	2750 2850 2750 2950
+Connection ~ 2750 2450
+Wire Wire Line
+	10300 1400 10900 1400
+Wire Wire Line
+	8900 1300 8900 1650
+Wire Wire Line
+	8900 1400 9100 1400
+Wire Wire Line
+	10600 1400 10600 1650
+Connection ~ 10600 1400
+Wire Wire Line
+	10600 1950 10600 2100
+Wire Wire Line
+	8900 1950 8900 2100
+Connection ~ 8900 1400
+Wire Wire Line
+	5500 5650 5550 5650
+Wire Wire Line
+	5550 5650 5550 5800
+Wire Wire Line
+	5650 5550 5650 5800
+Wire Wire Line
+	5650 4300 5650 5250
+Connection ~ 5650 4300
+Wire Wire Line
+	5750 5800 5750 5750
+Wire Wire Line
+	5750 5750 5850 5750
+Wire Wire Line
+	5850 5750 5850 5550
+Wire Wire Line
+	5850 4200 5850 5250
+Wire Wire Line
+	5850 4200 5050 4200
+Wire Wire Line
+	8400 1550 9100 1550
+Wire Wire Line
+	8600 2000 8600 2250
+Wire Wire Line
+	8600 1550 8600 1700
+Connection ~ 8600 1550
+Wire Wire Line
+	7550 750  7550 900 
+Wire Wire Line
+	7350 1850 8400 1850
+Wire Wire Line
+	7550 1850 7550 1500
+Connection ~ 7550 1850
+Wire Wire Line
+	7150 2000 7150 2250
+Wire Wire Line
+	7150 750  7150 950 
+Wire Wire Line
+	7150 1250 7150 1700
+Connection ~ 5600 2550
+Wire Wire Line
+	5600 750  5600 950 
+Wire Wire Line
+	5600 1500 6100 1500
+Connection ~ 5600 1500
+Wire Wire Line
+	6400 1500 7150 1500
+Connection ~ 7150 1500
+Wire Wire Line
+	5850 4750 7100 4750
+Connection ~ 5850 4750
+Wire Wire Line
+	7750 1850 7750 2000
+Connection ~ 7750 1850
+Wire Wire Line
+	7750 2300 7750 2450
+Wire Wire Line
+	7450 3250 7800 3250
+Wire Wire Line
+	7700 1550 8100 1550
+Wire Wire Line
+	1600 2650 1600 3250
+Wire Wire Line
+	2950 3250 1450 3250
+Connection ~ 2950 3250
+Connection ~ 1600 3250
+Wire Wire Line
+	1050 3800 1050 3750
+Wire Wire Line
+	1050 2500 1050 2750
+Wire Wire Line
+	1050 2650 1600 2650
+Connection ~ 1050 2650
+Wire Wire Line
+	5450 1200 5450 2700
+Wire Wire Line
+	1050 1700 1050 2200
+Wire Wire Line
+	5050 3650 5300 3650
+Wire Wire Line
+	5050 3550 5300 3550
+Wire Wire Line
+	5050 3850 7150 3850
+Wire Wire Line
+	6600 5850 6650 5850
+Wire Wire Line
+	6650 5850 6650 5950
+Wire Wire Line
+	7850 4850 7850 4900
+Wire Wire Line
+	7950 5050 7950 4950
+Wire Wire Line
+	7400 5050 7950 5050
+Wire Wire Line
+	5550 4900 7450 4900
+Wire Wire Line
+	5550 4900 5550 4800
+Wire Wire Line
+	5550 4800 5050 4800
+Wire Wire Line
+	5300 5050 7100 5050
+Wire Wire Line
+	8350 5050 8350 5550
+Wire Wire Line
+	8350 5550 10900 5550
+Wire Wire Line
+	10900 5550 10900 1400
+Wire Wire Line
+	5050 4700 6750 4700
+Wire Wire Line
+	6750 4700 6750 4550
+Wire Wire Line
+	6750 4550 10050 4550
+Wire Wire Line
+	10050 4550 10050 4850
+Wire Wire Line
+	10150 4950 10150 4500
+Wire Wire Line
+	10150 4500 6700 4500
+Wire Wire Line
+	6700 4500 6700 4600
+Wire Wire Line
+	6700 4600 5050 4600
+Wire Wire Line
+	3050 4700 3050 5050
+Wire Wire Line
+	3050 4700 3150 4700
+Wire Wire Line
+	3150 4800 3050 4800
+Connection ~ 3050 4800
+Wire Wire Line
+	3150 4900 3050 4900
+Connection ~ 3050 4900
+Wire Wire Line
+	6750 5900 6750 5950
+Wire Wire Line
+	2250 3950 3150 3950
+Wire Wire Line
+	3150 4050 2950 4050
+Wire Wire Line
+	4400 2050 4350 2050
+Wire Wire Line
+	4350 1950 5300 1950
+Wire Wire Line
+	5450 2700 5050 2700
+Wire Wire Line
+	4450 1850 4350 1850
+Wire Wire Line
+	5050 2800 5300 2800
+Wire Wire Line
+	2150 7100 3050 7100
+Wire Wire Line
+	1500 7350 1450 7350
+Connection ~ 1450 7350
+Wire Wire Line
+	1500 6100 1450 6100
+Connection ~ 1450 6100
+Wire Wire Line
+	1000 6150 1000 5950
+Wire Wire Line
+	1000 6550 1000 6900
+Wire Wire Line
+	5300 2600 5050 2600
+Wire Wire Line
+	5300 1700 5300 2600
+Wire Wire Line
+	5050 4900 5300 4900
+Wire Wire Line
+	5300 4900 5300 5050
+Wire Wire Line
+	2250 1350 2250 2550
+Connection ~ 2250 1700
+Wire Wire Line
+	2750 2450 3050 2450
+Wire Wire Line
+	2250 2850 2250 4250
+Connection ~ 2250 3950
+Wire Wire Line
+	2950 4050 2950 4200
+Wire Wire Line
+	1050 1700 4650 1700
+Wire Wire Line
+	2500 4550 2500 4650
+Wire Wire Line
+	2500 3950 2500 4250
+Connection ~ 2500 3950
+Wire Wire Line
+	5050 3450 5300 3450
+Connection ~ 4450 1700
+Wire Wire Line
+	4950 1700 5300 1700
+Connection ~ 5300 1950
+Wire Wire Line
+	4450 1850 4450 1700
+Wire Wire Line
+	5050 4400 5300 4400
+Wire Wire Line
+	5050 4500 5300 4500
+Wire Wire Line
+	7700 1700 7950 1700
+Wire Wire Line
+	7950 1700 7950 2000
+Connection ~ 7950 1850
+Wire Wire Line
+	5050 3750 5300 3750
+Wire Wire Line
+	7750 3050 7750 3450
+Connection ~ 7750 3250
+Connection ~ 7350 3450
+Connection ~ 7350 3050
+Wire Wire Line
+	2450 1200 5450 1200
+Wire Wire Line
+	6950 3950 6950 5300
+Wire Wire Line
+	6850 3850 6850 5300
+Wire Wire Line
+	6850 5600 6850 5950
+Wire Wire Line
+	6950 5600 6950 5950
+Connection ~ 6850 3850
+Connection ~ 6950 3950
+Wire Wire Line
+	7450 3850 7650 3850
+Wire Wire Line
+	7550 3850 7550 3950
+Connection ~ 7550 3850
+Wire Wire Line
+	9700 2000 9700 1900
+Wire Wire Line
+	9650 1900 9750 1900
+Connection ~ 9700 1900
+Wire Wire Line
+	5850 5800 6250 5800
+Wire Wire Line
+	6250 5800 6250 3050
+Wire Wire Line
+	6250 3050 6900 3050
+Wire Wire Line
+	6900 3050 6900 1500
+Connection ~ 6900 1500
+Wire Wire Line
+	1900 1700 1900 1950
+Connection ~ 1900 1700
+Text Label 5650 2550 0    60   ~ 0
+RST\
+Text Notes 3250 6300 0    80   ~ 16
+Additional Hardware:
+$Comp
+L Item Item1
+U 1 1 5508CAE2
+P 3450 6500
+F 0 "Item1" H 3450 6600 50  0000 R CNN
+F 1 "Solar Panel 80x80x5mm, laminated glass, 6V/100mA" H 3550 6600 50  0000 L CNN
+F 2 "wifi-sensor:Solar-Panel_60x60mm" H 3450 6500 60  0001 C CNN
+F 3 "" H 3450 6500 60  0000 C CNN
+F 4 "Solar-80" H 3550 6500 60  0000 L CNN "InternalName"
+	1    3450 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Item Item2
+U 1 1 550903A5
+P 3450 6700
+F 0 "Item2" H 3450 6800 50  0000 R CNN
+F 1 "Battery, 3.6V, Li-Ion" H 3550 6800 50  0000 L CNN
+F 2 "zeilhofer:Battery-Pack-3xAAA" H 3450 6700 60  0001 C CNN
+F 3 "" H 3450 6700 60  0000 C CNN
+F 4 "Batt-Li-WT" H 3550 6700 60  0000 L CNN "InternalName"
+	1    3450 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Item Item3
+U 1 1 550946A6
+P 3450 6900
+F 0 "Item3" H 3450 7000 50  0000 R CNN
+F 1 "PCB 36x51x1.5mm, 2x35um Cu, 2x Silk, 2x Mask" H 3550 7000 50  0000 L CNN
+F 2 "~" H 3450 6900 60  0001 C CNN
+F 3 "" H 3450 6900 60  0000 C CNN
+F 4 "PCB-WolkenThermometerV1.0" H 3550 6900 60  0000 L CNN "InternalName"
+	1    3450 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Item Item4
+U 1 1 55094A28
+P 3450 7100
+F 0 "Item4" H 3450 7200 50  0000 R CNN
+F 1 "SMD Stencil, 100um stainless steel, 100x100mm" H 3550 7200 50  0000 L CNN
+F 2 "~" H 3450 7100 60  0001 C CNN
+F 3 "" H 3450 7100 60  0000 C CNN
+F 4 "Stencil-WolkenThermometerV1.0" H 3550 7100 60  0000 L CNN "InternalName"
+	1    3450 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3950 7150 3950
+$Comp
+L Item Item5
+U 1 1 5509AAAB
+P 7850 5850
+F 0 "Item5" H 7850 5950 50  0000 R CNN
+F 1 "M3 nut, self-retaining, for distance holder" H 7950 5950 50  0000 L CNN
+F 2 "~" H 7850 5850 60  0001 C CNN
+F 3 "" H 7850 5850 60  0000 C CNN
+F 4 "M3-A2-SS" H 7950 5850 60  0000 L CNN "InternalName"
+	1    7850 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Item Item6
+U 1 1 5509B5F7
+P 7850 6050
+F 0 "Item6" H 7850 6150 50  0000 R CNN
+F 1 "M3 nut, self-retaining, for distance holder" H 7950 6150 50  0000 L CNN
+F 2 "~" H 7850 6050 60  0001 C CNN
+F 3 "" H 7850 6050 60  0000 C CNN
+F 4 "M3-A2-SS" H 7950 6050 60  0000 L CNN "InternalName"
+	1    7850 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Item Item7
+U 1 1 5509B64C
+P 7850 6250
+F 0 "Item7" H 7850 6350 50  0000 R CNN
+F 1 "M3 nut, self-retaining, for distance holder" H 7950 6350 50  0000 L CNN
+F 2 "~" H 7850 6250 60  0001 C CNN
+F 3 "" H 7850 6250 60  0000 C CNN
+F 4 "M3-A2-SS" H 7950 6250 60  0000 L CNN "InternalName"
+	1    7850 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Item Item8
+U 1 1 5509B69E
+P 7850 6450
+F 0 "Item8" H 7850 6550 50  0000 R CNN
+F 1 "M3 nut, self-retaining, for distance holder" H 7950 6550 50  0000 L CNN
+F 2 "~" H 7850 6450 60  0001 C CNN
+F 3 "" H 7850 6450 60  0000 C CNN
+F 4 "M3-A2-SS" H 7950 6450 60  0000 L CNN "InternalName"
+	1    7850 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Item Item9
+U 1 1 5509F45A
+P 3450 7300
+F 0 "Item9" H 3450 7400 50  0000 R CNN
+F 1 "Temperature Sensor, Dallas DS18B20" H 3550 7400 50  0000 L CNN
+F 2 "~" H 3450 7300 60  0001 C CNN
+F 3 "" H 3450 7300 60  0000 C CNN
+F 4 "DS18B20" H 3550 7300 60  0000 L CNN "InternalName"
+	1    3450 7300
+	1    0    0    -1  
+$EndComp
+Text Label 5100 4300 0    60   ~ 0
+D1-TXD
+Text Label 5100 4200 0    60   ~ 0
+D0-RXD
+Text Notes 11850 3800 0    60   ~ 0
+History:\nchanges since version "prototype"\nchanged R23 from 1k to 100R\n\nThe gates of Q3 and Q4 were unprotected. No clamping diode is installed. \nadded C9 for ESD protection. \nchanged R21 from 100k to 1k for better EMI and ESD immunity
+$Comp
+L C C9
+U 1 1 5511A05B
+P 7950 2150
+F 0 "C9" H 8000 2250 50  0000 L CNN
+F 1 "100n/50V/X7R" V 7800 1800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7988 2000 30  0001 C CNN
+F 3 "" H 7950 2150 60  0000 C CNN
+	1    7950 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR036
+U 1 1 5511A10E
+P 7950 2450
+F 0 "#PWR036" H 7950 2200 60  0001 C CNN
+F 1 "GND" H 7950 2300 60  0000 C CNN
+F 2 "" H 7950 2450 60  0000 C CNN
+F 3 "" H 7950 2450 60  0000 C CNN
+	1    7950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2300 7950 2450
+Text Notes 11900 3950 0    60   ~ 0
+Swapped names of R13 and R18, because on the PCB the lables were wrongly placed. 
+Wire Wire Line
+	1900 2350 1900 2250
+Wire Wire Line
+	2950 3600 2950 3650
+Wire Wire Line
+	2250 4550 2250 4650
+Wire Wire Line
+	7850 4900 7750 4900
+Wire Wire Line
+	7550 3950 7450 3950
+Wire Wire Line
+	7750 3450 7700 3450
+Wire Wire Line
+	7750 3050 7700 3050
+Text Notes 11850 4150 0    60   ~ 0
+Changed battery type from NiMH (3x1.2V) to Li-Ion (3.6V) and \nthe according voltage limits. 
+Text Notes 7250 2750 0    60   ~ 0
+C9 is on top of R21 on PCB V1.0
+$EndSCHEMATC
